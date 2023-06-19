@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Connect Four game</title>
+</head>
+<body>
+  <div id="mainMenu">
+    <div id="content">
+      <img id="logo" src="assets/images/logo.svg">
+      <button id="pvc">
+        Play vs cpu
+        <img src="assets/images/player-vs-cpu.svg">
+      </button>
+      <button id="pvp">
+        Play vs player
+        <img src="assets/images/player-vs-player.svg">
+      </button>
+      <button>Game rules</button>
+    </div>
+  </div>
+
+  <div id="rules">
+    <div id="content">
+      <div id="title">Rules</div>
+      <div class="subtitle">Objective</div>
+      <div class="rule">Be the first player to connect 4 of the same colored discs in a row (either vertically, horizontally, or diagonally).</div>
+      <div class="subtitle">How to play</div>
+      <div class="rule">
+        <ol>
+          <li>Red goes first in the first game.</li>
+          <li>Players must alternate turns, and only one disc can be dropped in each turn.</li>
+          <li>The game ends when there is a 4-in-a-row or a stalemate.</li>
+          <li>The starter of the previous game goes second on the next game.</li>
+        </ol>
+      </div>
+      <img id="check" src="assets/images/icon-check.svg">
+    </div>
+  </div>
+
+  <div id="game">
+    <div id="topBar">
+      <button>Menu</button>
+      <img src="assets/images/logo.svg">
+      <button>Restart</button>
+    </div>
+    <div class="side">
+      <div class="sideContent">
+        <div class="playerName">you</div>
+        <div class="score">0</div>
+      </div>
+    </div>
+    <div id="board">
+      <img src="assets/images/board-layer-black-large.svg">
+      <img src="assets/images/board-layer-white-large.svg">
+    </div>
+    <div class="side">
+      <div class="sideContent">
+        <div class="playerName">cpu</div>
+        <div class="score">0</div>
+      </div>
+    </div>
+    <div id="gameBackground"></div>
+  </div>
+
+  <!-- Ingame menu start -->
+<!--
+  Pause
+
+  Continue game
+  Restart
+  Quit game
+-->
+  <!-- Ingame menu end -->
+  
+  <!-- Game board start -->
+<!--
+  Menu
+  
+
+  Player 1
+  Player 2
+
+  Player 1's turn
+  Player 2's turn
+
+  Wins
+  Play again
+-->
+  <!-- Game board end -->
+
+</body>
+</html>
